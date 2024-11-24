@@ -7,9 +7,9 @@ This software module serves to detect and localize parcels to be grasped by a mo
 
 The module provides three interfaces with other modules:
 
-	- ModuleInterface: class used to send message or signals and to receive requests to/from the operation manager, controlling the execution of the programa.
-  - UDPPublisher: socket interface equivalent to ModuleInterface, used to send the pose of the detected marker to the specified hosts given by IP address and UDP port.
-	- UDPImage: class used to send JPEG encoded images through UDP sockets to provide visual feedback to the human supervisor. The degree of compression is defined by the constant ENCODED_IMAGE_JPEG_QUALITY, set to 15% quality by default in order to reduce the packet size sent through the socket.
+- ModuleInterface: class used to send message or signals and to receive requests to/from the operation manager, controlling the execution of the programa.
+- UDPPublisher: socket interface equivalent to ModuleInterface, used to send the pose of the detected marker to the specified hosts given by IP address and UDP port.
+- UDPImage: class used to send JPEG encoded images through UDP sockets to provide visual feedback to the human supervisor. The degree of compression is defined by the constant ENCODED_IMAGE_JPEG_QUALITY, set to 15% quality by default in order to reduce the packet size sent through the socket.
 
 Grasping points will be sent through UDP sockets in data packets corresponding to C-style data structures.
 
@@ -33,7 +33,7 @@ It is very important to include the modifier __attribute__((packed)) in the defi
 
 # Requirements
 
-This software module requies OpenCV 4.10, making use of the C++ API. It may be compiled with previous versions (4.9 or earlier).
+This software module requires OpenCV 4.10, making use of the C++ API. It may be compiled with previous versions (4.9 or earlier).
 
 
 # Installation
